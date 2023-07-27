@@ -5,7 +5,7 @@ const reverseString = (str) => {
     for (i = str.length - 1; i >= 0; i--) {
         reverseStringContainer.push(str[i])
     }
-    // console.log((reverseStringContainer.join('')));
+    console.log((reverseStringContainer.join('')));
 }
 
 reverseString('hello world')
@@ -19,7 +19,7 @@ for (let i = 0; i < integerNumberArr.length; i++) {
         sum = sum + integerNumberArr[i]
     }
 }
-// console.log(sum);
+console.log(sum);
 
 
 //Task 3: Write a JavaScript program to find the most frequent element in an array and return it.
@@ -40,7 +40,7 @@ const mostRepeatedNumber = (arr) => {
             mostFrequentNumber = number;
         }
     })
-    // console.log('Most frequent number is: ' + mostFrequentNumber);
+    console.log('Most frequent number is: ' + mostFrequentNumber);
 }
 
 mostRepeatedNumber([3, 5, 2, 5, 3, 3, 1, 4, 5])
@@ -63,7 +63,7 @@ const sortedSum = (arr, target) => {
     return `There are no numbers which sum is equal to ${target}`
 }
 
-// console.log(sortedSum([2, 4, 6, 8, 12, 14], 1));
+console.log(sortedSum([1, 3, 6, 8, 11, 15], 9));
 
 //Task 5:  Implement a simple JavaScript calculator. The calculator should take two numbers and an operator (+, -, *, /) as input and return the result of the operation.
 
@@ -80,7 +80,7 @@ const calculateTwoNumbers = (number1, number2, operator) => {
 }
 
 
-// console.log(calculateTwoNumbers(1, 3, '/'));
+console.log(calculateTwoNumbers(1, 3, '/'));
 
 
 // Task 6: Create a program that generates a random password of a specified length. The password should include a mix of uppercase letters, lowercase letters, numbers, and special characters.
@@ -135,15 +135,15 @@ function romanToInt(romanNumber) {
         oldValue = value;
     }
 
-    console.log(total); 
+    console.log(total);
 }
 
 romanToInt('VI')
 
 // Task 8: Implement a JavaScript function to find the second smallest element in an array of numbers.
 
-const secondSmallestArr = (arr) =>{
+const secondSmallestArr = (arr) => {
     const sortedArr = arr.sort((a, b) => a - b);
-    console.log(sortedArr[sortedArr.length-2]);
+    console.log(sortedArr[sortedArr.length - 2]);
 }
 secondSmallestArr([1, 2, 3, 5, 4, 7, 11, 90, 25, 27, 125])
